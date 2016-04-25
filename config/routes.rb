@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :categories, :quotes
 
-  root to: "categories#index"
+  root to: "categories"
 
   get "/politicians", to: redirect("categories/1")
   get "/actors", to: redirect("categories/2")
