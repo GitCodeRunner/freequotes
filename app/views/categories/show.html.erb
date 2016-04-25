@@ -1,0 +1,8 @@
+<h1><%= @category.name %></h1>
+<ul>
+	<% @category.quotes.each do |quote| %>
+	<li><%= link_to quote.string, quote %></li>
+	<% end %>
+</ul>
+
+<p><%= link_to "Back to Quote Categories", categories_path %></p>

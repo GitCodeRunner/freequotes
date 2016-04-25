@@ -1,0 +1,10 @@
+<h1><%= @quote.name %></h1>
+<p><%= @quote.string %></p>
+
+<% if @quote.category_id == 1 %>
+<p><%= link_to "Back to Quotes from Politicians", politicians_path %></p>
+<% end %>
+
+<% if @quote.category_id == 2 %>
+<p><%= link_to "Back to Quotes from Actors", actors_path %></p>
+<% end %>
